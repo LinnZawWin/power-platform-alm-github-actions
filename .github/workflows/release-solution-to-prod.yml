@@ -1,0 +1,54 @@
+name: release-solution-to-prod
+
+# Pack the solution as managed and deploy it to the production environment when
+# a GitHub Release is published.
+
+on:
+  release:
+    types: [published]
+
+env:
+  solution_name: MySolution
+  solution_source_folder: solutions
+  solution_outbound_folder: out/solutions
+
+jobs:
+  release-to-prod:
+    runs-on: windows-latest
+    permissions:
+      contents: write
+    env:
+      RUNNER_DEBUG: 1
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          lfs: true
+
+      - name: Pack managed solution from source
+        uses: microsoft/powerplatform-actions/pack-solution@v0
+        with:
+          solution-folder: ${{ env.solution_source_folder }}/${{ env.solution_name }}
+          solution-file: ${{ env.solution_outbound_folder }}/${{ env.solution_name }}_managed.zip
+          solution-type: Managed
+
+      - name: Import managed solution to production environment
+        uses: microsoft/powerplatform-actions/import-solution@v0
+        with:
+          environment-url: ${{ secrets.PROD_ENVIRONMENT_URL }}
+          app-id: ${{ secrets.CLIENT_ID }}
+          client-secret: ${{ secrets.CLIENT_SECRET }}
+          tenant-id: ${{ secrets.TENANT_ID }}
+          solution-file: ${{ env.solution_outbound_folder }}/${{ env.solution_name }}_managed.zip
+          force-overwrite: true
+          publish-changes: true
+
+      - name: Upload managed solution to release assets
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ${{ env.solution_outbound_folder }}/${{ env.solution_name }}_managed.zip
+          asset_name: ${{ env.solution_name }}_managed.zip
+          asset_content_type: application/zip

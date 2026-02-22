@@ -1,0 +1,72 @@
+name: export-and-branch-solution
+
+# Export an unmanaged solution from the Power Platform development environment,
+# unpack it into source files, and open a pull request to merge the changes into main.
+
+on:
+  workflow_dispatch:
+    inputs:
+      solution_name:
+        description: 'Name of the Power Platform solution to export'
+        required: true
+        default: MySolution
+      solution_exported_folder:
+        description: 'Temporary folder to hold the exported solution zip'
+        required: true
+        default: out/exported/
+      solution_folder:
+        description: 'Temporary staging folder for the unpacked solution'
+        required: true
+        default: out/solutions/
+      solution_target_folder:
+        description: 'Source-controlled folder where the unpacked solution is stored'
+        required: true
+        default: solutions/
+
+jobs:
+  export-from-dev:
+    runs-on: windows-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    env:
+      RUNNER_DEBUG: 1
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          lfs: true
+
+      - name: Verify connection to development environment
+        uses: microsoft/powerplatform-actions/who-am-i@v0
+        with:
+          environment-url: ${{ secrets.DEV_ENVIRONMENT_URL }}
+          app-id: ${{ secrets.CLIENT_ID }}
+          client-secret: ${{ secrets.CLIENT_SECRET }}
+          tenant-id: ${{ secrets.TENANT_ID }}
+
+      - name: Export unmanaged solution from development environment
+        uses: microsoft/powerplatform-actions/export-solution@v0
+        with:
+          environment-url: ${{ secrets.DEV_ENVIRONMENT_URL }}
+          app-id: ${{ secrets.CLIENT_ID }}
+          client-secret: ${{ secrets.CLIENT_SECRET }}
+          tenant-id: ${{ secrets.TENANT_ID }}
+          solution-name: ${{ github.event.inputs.solution_name }}
+          solution-output-file: ${{ github.event.inputs.solution_exported_folder }}/${{ github.event.inputs.solution_name }}.zip
+
+      - name: Unpack solution into source files
+        uses: microsoft/powerplatform-actions/unpack-solution@v0
+        with:
+          solution-file: ${{ github.event.inputs.solution_exported_folder }}/${{ github.event.inputs.solution_name }}.zip
+          solution-folder: ${{ github.event.inputs.solution_folder }}/${{ github.event.inputs.solution_name }}
+          solution-type: Unmanaged
+          overwrite-files: true
+
+      - name: Create branch and open pull request
+        uses: microsoft/powerplatform-actions/branch-solution@v0
+        with:
+          solution-folder: ${{ github.event.inputs.solution_folder }}/${{ github.event.inputs.solution_name }}
+          solution-target-folder: ${{ github.event.inputs.solution_target_folder }}/${{ github.event.inputs.solution_name }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          allow-empty-commit: true

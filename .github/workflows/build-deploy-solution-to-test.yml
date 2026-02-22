@@ -1,0 +1,53 @@
+name: build-deploy-solution-to-test
+
+# Pack the solution from source and deploy it to the test environment whenever
+# a change is merged (pushed) to the main branch.
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'solutions/**'
+
+env:
+  solution_name: MySolution
+  solution_source_folder: solutions
+  solution_outbound_folder: out/solutions
+
+jobs:
+  build-and-deploy-to-test:
+    runs-on: windows-latest
+    permissions:
+      contents: read
+    env:
+      RUNNER_DEBUG: 1
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          lfs: true
+
+      - name: Pack unmanaged solution from source
+        uses: microsoft/powerplatform-actions/pack-solution@v0
+        with:
+          solution-folder: ${{ env.solution_source_folder }}/${{ env.solution_name }}
+          solution-file: ${{ env.solution_outbound_folder }}/${{ env.solution_name }}.zip
+          solution-type: Unmanaged
+
+      - name: Import solution to test environment
+        uses: microsoft/powerplatform-actions/import-solution@v0
+        with:
+          environment-url: ${{ secrets.TEST_ENVIRONMENT_URL }}
+          app-id: ${{ secrets.CLIENT_ID }}
+          client-secret: ${{ secrets.CLIENT_SECRET }}
+          tenant-id: ${{ secrets.TENANT_ID }}
+          solution-file: ${{ env.solution_outbound_folder }}/${{ env.solution_name }}.zip
+          force-overwrite: true
+          publish-changes: true
+
+      - name: Upload solution artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ env.solution_name }}-unmanaged
+          path: ${{ env.solution_outbound_folder }}/${{ env.solution_name }}.zip
