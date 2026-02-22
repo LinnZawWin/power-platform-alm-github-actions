@@ -1,0 +1,23 @@
+name: Deploy All Solutions
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment_url:
+        description: 'Target environment URL'
+        required: true
+        type: choice
+        options:
+          - 'https://lzwdev.crm6.dynamics.com'
+
+permissions:
+  contents: write
+
+jobs:
+  deploy-nzta-configuration:
+    name: Deploy ClinicalNotes
+    uses: ./.github/workflows/deploy-solution.yml
+    with:
+      solution_name: 'ClinicalNotes'
+      environment_url: ${{ github.event.inputs.environment_url }}
+    secrets: inherit
