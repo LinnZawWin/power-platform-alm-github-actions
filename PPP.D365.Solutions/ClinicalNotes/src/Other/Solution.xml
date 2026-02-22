@@ -1,0 +1,636 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.26013.155" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.26013.155" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.26013.00155">
+  <SolutionManifest>
+    <UniqueName>ClinicalNotes</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Clinical Notes" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.0</Version>
+    <Managed>2</Managed>
+    <Publisher>
+      <UniqueName>linnzawwin</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Linn Zaw Win" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>lzw</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>85913</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="lzw_clinicalnotes" behavior="0" />
+      <RootComponent type="1" schemaName="lzw_doctor" behavior="0" />
+      <RootComponent type="1" schemaName="lzw_patient" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="createdby" displayName="Created By" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="createdon" displayName="Created On" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="createdonbehalfby" displayName="Created By (Delegate)" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="importsequencenumber" displayName="Import Sequence Number" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="lzw_additionalnotes" displayName="Additional Notes" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="lzw_allergies" displayName="Allergies" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="lzw_clinicalnotesid" displayName="Clinical Notes" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="lzw_clinicalsummary" displayName="Clinical Summary" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="lzw_diagnosis" displayName="Diagnosis" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="lzw_enteredby" displayName="Entered By" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="lzw_entrydate" displayName="Entry Date" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="lzw_followupdate" displayName="Follow Up Date" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="lzw_imagingresults" displayName="Imaging Results" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="lzw_labresults" displayName="Lab Results" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="lzw_medicationsprescribed" displayName="Medications Prescribed" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="lzw_observations" displayName="Observations" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="lzw_originalnotes" displayName="Original Notes" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="lzw_symptoms" displayName="Symptoms" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="lzw_treatmentplan" displayName="Treatment Plan" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="lzw_typeofnote" displayName="Type of Note" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="lzw_vitalsigns" displayName="Vital Signs" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="modifiedby" displayName="Modified By" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="modifiedon" displayName="Modified On" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="modifiedonbehalfby" displayName="Modified By (Delegate)" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="overriddencreatedon" displayName="Record Created On" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="ownerid" displayName="Owner" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="owningbusinessunit" displayName="Owning Business Unit" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="owningteam" displayName="Owning Team" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="owninguser" displayName="Owning User" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="statecode" displayName="Status" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="statuscode" displayName="Status Reason" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="timezoneruleversionnumber" displayName="Time Zone Rule Version Number" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="utcconversiontimezonecode" displayName="UTC Conversion Time Zone Code" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="2" schemaName="versionnumber" displayName="Version Number" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="26" schemaName="Clinical Notes Lookup View" displayName="Clinical Notes Lookup View" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" id="{05c7e39e-eae1-4128-bc0f-3df8d9b3f429}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="26" schemaName="Quick Find Active Clinical Notes" displayName="Quick Find Active Clinical Notes" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" id="{10002d32-2066-47fe-9cb4-e7ffbd839b9d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="26" schemaName="Clinical Notes Associated View" displayName="Clinical Notes Associated View" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" id="{1022c59b-0222-419c-a5d1-46daa8f2285a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="26" schemaName="Active Clinical Notes" displayName="Active Clinical Notes" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" id="{8dff87f7-65d7-485f-8895-6d62d22257be}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="26" schemaName="Clinical Notes Advanced Find View" displayName="Clinical Notes Advanced Find View" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" id="{d3203bfb-071c-4a0d-8d3a-b3c35e343032}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="26" schemaName="Inactive Clinical Notes" displayName="Inactive Clinical Notes" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" id="{d7f71821-cfce-4c74-892b-4b0687477c10}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="26" schemaName="My Clinical Notes" displayName="My Clinical Notes" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" id="{e1959cae-f195-ef11-8a6a-000d3a6ab50a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Clinical Notes" id="{193e847a-842b-4c7d-9ea1-9e7bdc39b848}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Clinical Notes" id="{201f6d6d-0b1f-4374-a637-758a9e42c66b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Clinical Notes" id="{daea6a42-d376-4673-b221-461dc2c724e4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_clinicalnotes" displayName="Clinical Notes" solution="Active" />
+        <Dependent type="68" id="{348d90f5-cb4d-43c9-adb7-93bff60a4252}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="1" schemaName="lzw_doctor" displayName="Doctor" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="2" schemaName="createdby" displayName="Created By" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="2" schemaName="createdon" displayName="Created On" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="2" schemaName="createdonbehalfby" displayName="Created By (Delegate)" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="2" schemaName="importsequencenumber" displayName="Import Sequence Number" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="2" schemaName="lzw_doctorid" displayName="Doctor" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="2" schemaName="lzw_specialization" displayName="Specialization" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="2" schemaName="modifiedby" displayName="Modified By" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="2" schemaName="modifiedon" displayName="Modified On" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="2" schemaName="modifiedonbehalfby" displayName="Modified By (Delegate)" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="2" schemaName="overriddencreatedon" displayName="Record Created On" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="2" schemaName="ownerid" displayName="Owner" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="2" schemaName="owningbusinessunit" displayName="Owning Business Unit" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="2" schemaName="owningteam" displayName="Owning Team" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="2" schemaName="owninguser" displayName="Owning User" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="2" schemaName="statecode" displayName="Status" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="2" schemaName="statuscode" displayName="Status Reason" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="2" schemaName="timezoneruleversionnumber" displayName="Time Zone Rule Version Number" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="2" schemaName="utcconversiontimezonecode" displayName="UTC Conversion Time Zone Code" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="2" schemaName="versionnumber" displayName="Version Number" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="26" schemaName="Quick Find Active Doctors" displayName="Quick Find Active Doctors" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" id="{41a3f3bf-48fe-414e-9e94-6dc24f0aaf67}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="26" schemaName="My Doctors" displayName="My Doctors" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" id="{47023c14-f195-ef11-8a6a-002248939b31}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="26" schemaName="Doctor Associated View" displayName="Doctor Associated View" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" id="{870fac21-d577-42cd-82dd-59e9302e1531}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="26" schemaName="Active Doctors" displayName="Active Doctors" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" id="{959bae03-671d-4606-99f2-f1ac8e042a9b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="26" schemaName="Inactive Doctors" displayName="Inactive Doctors" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" id="{b54b09e7-6fe0-49d5-ac34-cc102952e576}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="26" schemaName="Doctor Advanced Find View" displayName="Doctor Advanced Find View" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" id="{c350f047-b63e-4c8c-8ac3-3599dc5e1f9f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="26" schemaName="Doctor Lookup View" displayName="Doctor Lookup View" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" id="{d8a3196b-ab83-49f7-b6a2-93b9f6a22fee}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Doctor" id="{4ccee204-26bc-439a-b2bd-cf7a85c6ac0c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Doctor" id="{b162735e-9119-4c8a-b2c0-c622e4e1bc1a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Doctor" id="{ef7b7032-8159-475d-b980-95ad501bb43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_doctor" displayName="Doctor" solution="Active" />
+        <Dependent type="68" id="{10ef4033-6bdd-4ae6-b417-452cdb7c934a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="1" schemaName="lzw_patient" displayName="Patient" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="2" schemaName="createdby" displayName="Created By" parentSchemaName="lzw_patient" parentDisplayName="Patient" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="2" schemaName="createdon" displayName="Created On" parentSchemaName="lzw_patient" parentDisplayName="Patient" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="2" schemaName="createdonbehalfby" displayName="Created By (Delegate)" parentSchemaName="lzw_patient" parentDisplayName="Patient" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="2" schemaName="importsequencenumber" displayName="Import Sequence Number" parentSchemaName="lzw_patient" parentDisplayName="Patient" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="2" schemaName="lzw_dateofbirth" displayName="Date of Birth" parentSchemaName="lzw_patient" parentDisplayName="Patient" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="2" schemaName="lzw_doctorid" displayName="Doctor" parentSchemaName="lzw_patient" parentDisplayName="Patient" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="2" schemaName="lzw_patientid" displayName="Patient" parentSchemaName="lzw_patient" parentDisplayName="Patient" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="2" schemaName="modifiedby" displayName="Modified By" parentSchemaName="lzw_patient" parentDisplayName="Patient" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="2" schemaName="modifiedon" displayName="Modified On" parentSchemaName="lzw_patient" parentDisplayName="Patient" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="2" schemaName="modifiedonbehalfby" displayName="Modified By (Delegate)" parentSchemaName="lzw_patient" parentDisplayName="Patient" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="2" schemaName="overriddencreatedon" displayName="Record Created On" parentSchemaName="lzw_patient" parentDisplayName="Patient" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="2" schemaName="ownerid" displayName="Owner" parentSchemaName="lzw_patient" parentDisplayName="Patient" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="2" schemaName="owningbusinessunit" displayName="Owning Business Unit" parentSchemaName="lzw_patient" parentDisplayName="Patient" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="2" schemaName="owningteam" displayName="Owning Team" parentSchemaName="lzw_patient" parentDisplayName="Patient" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="2" schemaName="owninguser" displayName="Owning User" parentSchemaName="lzw_patient" parentDisplayName="Patient" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="2" schemaName="statecode" displayName="Status" parentSchemaName="lzw_patient" parentDisplayName="Patient" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="2" schemaName="statuscode" displayName="Status Reason" parentSchemaName="lzw_patient" parentDisplayName="Patient" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="2" schemaName="timezoneruleversionnumber" displayName="Time Zone Rule Version Number" parentSchemaName="lzw_patient" parentDisplayName="Patient" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="2" schemaName="utcconversiontimezonecode" displayName="UTC Conversion Time Zone Code" parentSchemaName="lzw_patient" parentDisplayName="Patient" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="2" schemaName="versionnumber" displayName="Version Number" parentSchemaName="lzw_patient" parentDisplayName="Patient" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="26" schemaName="Active Patients" displayName="Active Patients" parentSchemaName="lzw_patient" parentDisplayName="Patient" id="{03286917-0a05-417e-ab83-67239bfb2b69}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="26" schemaName="Patient Associated View" displayName="Patient Associated View" parentSchemaName="lzw_patient" parentDisplayName="Patient" id="{102f4079-5ff3-494f-ac07-97a90f8754ba}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="26" schemaName="Quick Find Active Patients" displayName="Quick Find Active Patients" parentSchemaName="lzw_patient" parentDisplayName="Patient" id="{132548e0-896c-46dd-b532-9d57972e5c7a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="26" schemaName="Inactive Patients" displayName="Inactive Patients" parentSchemaName="lzw_patient" parentDisplayName="Patient" id="{6d8e12cc-2d3a-4b7c-8041-4310395a6cf9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="26" schemaName="My Patients" displayName="My Patients" parentSchemaName="lzw_patient" parentDisplayName="Patient" id="{8e3eb7c7-f095-ef11-8a6a-002248939b31}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="26" schemaName="Patient Lookup View" displayName="Patient Lookup View" parentSchemaName="lzw_patient" parentDisplayName="Patient" id="{a719c04a-f22c-41a7-9257-beb7782a6d46}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="26" schemaName="Patient Advanced Find View" displayName="Patient Advanced Find View" parentSchemaName="lzw_patient" parentDisplayName="Patient" id="{fdc50a36-695c-4d13-9e0d-ea503c98dee6}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Patient" id="{41b2894b-c4d0-4b92-8bf8-0b0241a8b1b3}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Patient" id="{81a67cab-d0a0-47b5-94b8-4e1ee85da6e8}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Patient" id="{ef729560-6a63-4d0f-9eca-f97666d24d9d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lzw_patient" displayName="Patient" solution="Active" />
+        <Dependent type="68" id="{28048e45-137f-46db-b353-22c7bc21b02d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lzw_doctorname" displayName="Doctor Name" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" solution="Active" />
+        <Dependent type="10" schemaName="lzw_Patient_lzw_Doctor" displayName="lzw_Patient_lzw_Doctor" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lzw_doctorname" displayName="Doctor Name" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" solution="Active" />
+        <Dependent type="26" schemaName="Quick Find Active Doctors" displayName="Quick Find Active Doctors" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" id="{41a3f3bf-48fe-414e-9e94-6dc24f0aaf67}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lzw_doctorname" displayName="Doctor Name" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" solution="Active" />
+        <Dependent type="26" schemaName="Doctor Associated View" displayName="Doctor Associated View" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" id="{870fac21-d577-42cd-82dd-59e9302e1531}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lzw_doctorname" displayName="Doctor Name" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" solution="Active" />
+        <Dependent type="26" schemaName="Active Doctors" displayName="Active Doctors" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" id="{959bae03-671d-4606-99f2-f1ac8e042a9b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lzw_doctorname" displayName="Doctor Name" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" solution="Active" />
+        <Dependent type="26" schemaName="Inactive Doctors" displayName="Inactive Doctors" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" id="{b54b09e7-6fe0-49d5-ac34-cc102952e576}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lzw_doctorname" displayName="Doctor Name" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" solution="Active" />
+        <Dependent type="26" schemaName="Doctor Advanced Find View" displayName="Doctor Advanced Find View" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" id="{c350f047-b63e-4c8c-8ac3-3599dc5e1f9f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lzw_doctorname" displayName="Doctor Name" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" solution="Active" />
+        <Dependent type="26" schemaName="Doctor Lookup View" displayName="Doctor Lookup View" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" id="{d8a3196b-ab83-49f7-b6a2-93b9f6a22fee}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lzw_doctorname" displayName="Doctor Name" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Doctor" id="{4ccee204-26bc-439a-b2bd-cf7a85c6ac0c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lzw_doctorname" displayName="Doctor Name" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Doctor" id="{b162735e-9119-4c8a-b2c0-c622e4e1bc1a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lzw_doctorname" displayName="Doctor Name" parentSchemaName="lzw_doctor" parentDisplayName="Doctor" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Doctor" id="{ef7b7032-8159-475d-b980-95ad501bb43b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lzw_patientname" displayName="Patient Name" parentSchemaName="lzw_patient" parentDisplayName="Patient" solution="Active" />
+        <Dependent type="26" schemaName="Active Patients" displayName="Active Patients" parentSchemaName="lzw_patient" parentDisplayName="Patient" id="{03286917-0a05-417e-ab83-67239bfb2b69}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lzw_patientname" displayName="Patient Name" parentSchemaName="lzw_patient" parentDisplayName="Patient" solution="Active" />
+        <Dependent type="26" schemaName="Patient Associated View" displayName="Patient Associated View" parentSchemaName="lzw_patient" parentDisplayName="Patient" id="{102f4079-5ff3-494f-ac07-97a90f8754ba}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lzw_patientname" displayName="Patient Name" parentSchemaName="lzw_patient" parentDisplayName="Patient" solution="Active" />
+        <Dependent type="26" schemaName="Quick Find Active Patients" displayName="Quick Find Active Patients" parentSchemaName="lzw_patient" parentDisplayName="Patient" id="{132548e0-896c-46dd-b532-9d57972e5c7a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lzw_patientname" displayName="Patient Name" parentSchemaName="lzw_patient" parentDisplayName="Patient" solution="Active" />
+        <Dependent type="26" schemaName="Inactive Patients" displayName="Inactive Patients" parentSchemaName="lzw_patient" parentDisplayName="Patient" id="{6d8e12cc-2d3a-4b7c-8041-4310395a6cf9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lzw_patientname" displayName="Patient Name" parentSchemaName="lzw_patient" parentDisplayName="Patient" solution="Active" />
+        <Dependent type="26" schemaName="Patient Lookup View" displayName="Patient Lookup View" parentSchemaName="lzw_patient" parentDisplayName="Patient" id="{a719c04a-f22c-41a7-9257-beb7782a6d46}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lzw_patientname" displayName="Patient Name" parentSchemaName="lzw_patient" parentDisplayName="Patient" solution="Active" />
+        <Dependent type="26" schemaName="Patient Advanced Find View" displayName="Patient Advanced Find View" parentSchemaName="lzw_patient" parentDisplayName="Patient" id="{fdc50a36-695c-4d13-9e0d-ea503c98dee6}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lzw_patientname" displayName="Patient Name" parentSchemaName="lzw_patient" parentDisplayName="Patient" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Patient" id="{41b2894b-c4d0-4b92-8bf8-0b0241a8b1b3}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lzw_patientname" displayName="Patient Name" parentSchemaName="lzw_patient" parentDisplayName="Patient" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Patient" id="{81a67cab-d0a0-47b5-94b8-4e1ee85da6e8}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lzw_patientname" displayName="Patient Name" parentSchemaName="lzw_patient" parentDisplayName="Patient" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Patient" id="{ef729560-6a63-4d0f-9eca-f97666d24d9d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lzw_title" displayName="Title" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" solution="Active" />
+        <Dependent type="26" schemaName="Clinical Notes Lookup View" displayName="Clinical Notes Lookup View" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" id="{05c7e39e-eae1-4128-bc0f-3df8d9b3f429}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lzw_title" displayName="Title" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" solution="Active" />
+        <Dependent type="26" schemaName="Quick Find Active Clinical Notes" displayName="Quick Find Active Clinical Notes" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" id="{10002d32-2066-47fe-9cb4-e7ffbd839b9d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lzw_title" displayName="Title" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" solution="Active" />
+        <Dependent type="26" schemaName="Clinical Notes Associated View" displayName="Clinical Notes Associated View" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" id="{1022c59b-0222-419c-a5d1-46daa8f2285a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lzw_title" displayName="Title" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" solution="Active" />
+        <Dependent type="26" schemaName="Active Clinical Notes" displayName="Active Clinical Notes" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" id="{8dff87f7-65d7-485f-8895-6d62d22257be}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lzw_title" displayName="Title" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" solution="Active" />
+        <Dependent type="26" schemaName="Clinical Notes Advanced Find View" displayName="Clinical Notes Advanced Find View" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" id="{d3203bfb-071c-4a0d-8d3a-b3c35e343032}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lzw_title" displayName="Title" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" solution="Active" />
+        <Dependent type="26" schemaName="Inactive Clinical Notes" displayName="Inactive Clinical Notes" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" id="{d7f71821-cfce-4c74-892b-4b0687477c10}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lzw_title" displayName="Title" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Clinical Notes" id="{193e847a-842b-4c7d-9ea1-9e7bdc39b848}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lzw_title" displayName="Title" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Clinical Notes" id="{201f6d6d-0b1f-4374-a637-758a9e42c66b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lzw_title" displayName="Title" parentSchemaName="lzw_clinicalnotes" parentDisplayName="Clinical Notes" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Clinical Notes" id="{daea6a42-d376-4673-b221-461dc2c724e4}" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

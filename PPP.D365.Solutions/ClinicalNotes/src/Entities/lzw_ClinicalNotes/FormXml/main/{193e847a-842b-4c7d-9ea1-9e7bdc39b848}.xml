@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{193e847a-842b-4c7d-9ea1-9e7bdc39b848}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{c27f9f26-0b62-4ee4-9513-e05d64bb3a66}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+            <label description="全般" languagecode="1041" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{13cc4913-e30a-40b6-ae14-e2437c82bbe0}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                    <label description="全般" languagecode="1041" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{6e8a4e56-74ef-45a2-84a9-43427e96f55d}">
+                        <labels>
+                          <label description="Title" languagecode="1033" />
+                        </labels>
+                        <control id="lzw_title" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="lzw_title" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7dfddb12-6d35-4a32-bc11-1a798d457882}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                          <label description="所有者" languagecode="1041" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{26b84d19-581b-4a4b-ac64-9a928d76b20e}">
+                        <labels>
+                          <label description="Entry Date" languagecode="1033" />
+                        </labels>
+                        <control id="lzw_entrydate" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="lzw_entrydate" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{314c5d22-73db-455d-ab60-09e97ccc33fd}">
+                        <labels>
+                          <label description="Entered By" languagecode="1033" />
+                        </labels>
+                        <control id="lzw_enteredby" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="lzw_enteredby" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c0bea7b8-ebae-4131-949b-a0b5b2b9d968}">
+                        <labels>
+                          <label description="Type of Note" languagecode="1033" />
+                        </labels>
+                        <control id="lzw_typeofnote" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="lzw_typeofnote" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6f8f2821-d026-4ece-b4be-85f949cdaf2f}">
+                        <labels>
+                          <label description="Clinical Summary" languagecode="1033" />
+                        </labels>
+                        <control id="lzw_clinicalsummary" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="lzw_clinicalsummary" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{141e36b8-0f51-46da-af1e-de1494ae4869}">
+                        <labels>
+                          <label description="Symptoms" languagecode="1033" />
+                        </labels>
+                        <control id="lzw_symptoms" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="lzw_symptoms" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{58d9ad95-038c-434a-a9b2-70942357173b}">
+                        <labels>
+                          <label description="Diagnosis" languagecode="1033" />
+                        </labels>
+                        <control id="lzw_diagnosis" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="lzw_diagnosis" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c6700e02-bac4-403f-af02-4c48aa491759}">
+                        <labels>
+                          <label description="Observations" languagecode="1033" />
+                        </labels>
+                        <control id="lzw_observations" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="lzw_observations" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5ee88740-95a9-45f3-9fb7-7148a8300620}">
+                        <labels>
+                          <label description="Treatment Plan" languagecode="1033" />
+                        </labels>
+                        <control id="lzw_treatmentplan" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="lzw_treatmentplan" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4fe4120f-2bf1-4f52-b8b3-ead06a4cde94}">
+                        <labels>
+                          <label description="Medications Prescribed" languagecode="1033" />
+                        </labels>
+                        <control id="lzw_medicationsprescribed" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="lzw_medicationsprescribed" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{22229137-a643-41b8-a688-a109fab9bc26}">
+                        <labels>
+                          <label description="Allergies" languagecode="1033" />
+                        </labels>
+                        <control id="lzw_allergies" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="lzw_allergies" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7c013a16-3e8a-4d29-9e7c-3de01541d839}">
+                        <labels>
+                          <label description="Vital Signs" languagecode="1033" />
+                        </labels>
+                        <control id="lzw_vitalsigns" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="lzw_vitalsigns" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e811aa9c-a9af-4008-a3e6-dfa7d39400ad}">
+                        <labels>
+                          <label description="Lab Results" languagecode="1033" />
+                        </labels>
+                        <control id="lzw_labresults" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="lzw_labresults" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{25db5e34-941c-47f3-8eb6-a51603a12af0}">
+                        <labels>
+                          <label description="Imaging Results" languagecode="1033" />
+                        </labels>
+                        <control id="lzw_imagingresults" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="lzw_imagingresults" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d74408cc-e52c-4baf-92cb-0524a583c576}">
+                        <labels>
+                          <label description="Follow Up Date" languagecode="1033" />
+                        </labels>
+                        <control id="lzw_followupdate" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="lzw_followupdate" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{84d26b78-0d76-49cf-93bb-0475931c4138}">
+                        <labels>
+                          <label description="Additional Notes" languagecode="1033" />
+                        </labels>
+                        <control id="lzw_additionalnotes" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="lzw_additionalnotes" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

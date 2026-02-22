@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{41a3f3bf-48fe-414e-9e94-6dc24f0aaf67}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="lzw_doctorname" select="1" icon="1" preview="1">
+        <row name="result" id="lzw_doctorid">
+          <cell name="lzw_doctorname" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="lzw_doctor">
+          <attribute name="lzw_doctorid" />
+          <attribute name="lzw_doctorname" />
+          <attribute name="createdon" />
+          <order attribute="lzw_doctorname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="lzw_doctorname" operator="like" value="{0}" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Doctors" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

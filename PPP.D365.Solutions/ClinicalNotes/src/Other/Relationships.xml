@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="business_unit_lzw_clinicalnotes" />
+  <EntityRelationship Name="business_unit_lzw_doctor" />
+  <EntityRelationship Name="business_unit_lzw_patient" />
+  <EntityRelationship Name="lk_lzw_clinicalnotes_createdby" />
+  <EntityRelationship Name="lk_lzw_clinicalnotes_modifiedby" />
+  <EntityRelationship Name="lk_lzw_doctor_createdby" />
+  <EntityRelationship Name="lk_lzw_doctor_modifiedby" />
+  <EntityRelationship Name="lk_lzw_patient_createdby" />
+  <EntityRelationship Name="lk_lzw_patient_modifiedby" />
+  <EntityRelationship Name="lzw_Patient_lzw_Doctor" />
+  <EntityRelationship Name="owner_lzw_clinicalnotes" />
+  <EntityRelationship Name="owner_lzw_doctor" />
+  <EntityRelationship Name="owner_lzw_patient" />
+  <EntityRelationship Name="team_lzw_clinicalnotes" />
+  <EntityRelationship Name="team_lzw_doctor" />
+  <EntityRelationship Name="team_lzw_patient" />
+  <EntityRelationship Name="user_lzw_clinicalnotes" />
+  <EntityRelationship Name="user_lzw_doctor" />
+  <EntityRelationship Name="user_lzw_patient" />
+</EntityRelationships>

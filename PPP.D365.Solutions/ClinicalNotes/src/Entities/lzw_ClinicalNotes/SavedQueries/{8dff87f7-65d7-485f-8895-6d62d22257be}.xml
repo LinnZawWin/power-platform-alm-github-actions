@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{8dff87f7-65d7-485f-8895-6d62d22257be}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="lzw_title" select="1" icon="1" preview="1">
+        <row name="result" id="lzw_clinicalnotesid">
+          <cell name="lzw_title" width="300" />
+          <cell name="createdon" width="125" />
+          <cell name="lzw_entrydate" width="150" />
+          <cell name="lzw_enteredby" width="150" />
+          <cell name="lzw_typeofnote" width="150" />
+          <cell name="lzw_clinicalsummary" width="150" />
+          <cell name="lzw_symptoms" width="150" />
+          <cell name="lzw_diagnosis" width="150" />
+          <cell name="lzw_observations" width="150" />
+          <cell name="lzw_treatmentplan" width="150" />
+          <cell name="lzw_medicationsprescribed" width="150" />
+          <cell name="lzw_allergies" width="150" />
+          <cell name="lzw_vitalsigns" width="150" />
+          <cell name="lzw_labresults" width="150" />
+          <cell name="lzw_imagingresults" width="150" />
+          <cell name="lzw_followupdate" width="150" />
+          <cell name="lzw_additionalnotes" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="lzw_clinicalnotes">
+          <attribute name="lzw_clinicalnotesid" />
+          <attribute name="lzw_title" />
+          <attribute name="createdon" />
+          <order attribute="lzw_title" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="lzw_entrydate" />
+          <attribute name="lzw_enteredby" />
+          <attribute name="lzw_typeofnote" />
+          <attribute name="lzw_clinicalsummary" />
+          <attribute name="lzw_symptoms" />
+          <attribute name="lzw_diagnosis" />
+          <attribute name="lzw_observations" />
+          <attribute name="lzw_treatmentplan" />
+          <attribute name="lzw_medicationsprescribed" />
+          <attribute name="lzw_allergies" />
+          <attribute name="lzw_vitalsigns" />
+          <attribute name="lzw_labresults" />
+          <attribute name="lzw_imagingresults" />
+          <attribute name="lzw_followupdate" />
+          <attribute name="lzw_additionalnotes" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Clinical Notes" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

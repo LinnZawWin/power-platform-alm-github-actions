@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{41b2894b-c4d0-4b92-8bf8-0b0241a8b1b3}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{eec10426-a525-4a7d-a309-424ce5e365b1}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+            <label description="全般" languagecode="1041" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{78ec2e88-d0b9-4b17-a23e-2e896785a706}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                    <label description="全般" languagecode="1041" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{2d90b771-9ae5-4613-9d1b-9e7c7f4235a9}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="lzw_patientname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="lzw_patientname" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{84aa07e3-ef41-4fe5-88c0-f658d9f72f97}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{73cae2f4-0ced-43c2-b66a-7e59f236f4d1}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="lzw_dateofbirth" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="lzw_dateofbirth" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f360e56e-2de5-4bb6-a825-bb3d7e15d208}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="lzw_doctorid" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="lzw_doctorid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>
