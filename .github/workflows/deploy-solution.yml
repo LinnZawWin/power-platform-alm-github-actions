@@ -51,7 +51,7 @@ jobs:
       - name: Pack Solution
         uses: microsoft/powerplatform-actions/pack-solution@v1
         with:
-          solution-folder: 'PPP.D365.Solutions/${{ env.SOLUTION_NAME }}'
+          solution-folder: 'PPP.D365.Solutions/${{ env.SOLUTION_NAME }}/src'
           solution-file: 'out/${{ env.SOLUTION_NAME }}_managed.zip'
           solution-type: 'Managed'
 
