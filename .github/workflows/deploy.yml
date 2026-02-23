@@ -9,6 +9,7 @@ on:
         type: choice
         options:
           - 'https://lzwdev.crm6.dynamics.com'
+          - 'https://org94f6bac6.crm6.dynamics.com'
 
 permissions:
   contents: write
